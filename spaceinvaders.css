@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.nav-bar{
+    background-color: #C38D8E;
+    height: 10vh;
+}
+.pages{
+    text-decoration: none;
+    float: right;
+    padding: 7px 17px;
+    color: #FFF;
+    margin-top: 15px;
+    position: relative;
+    font-weight: 700;
+}
+.pages:hover{
+    color: #05386B;
+    cursor: pointer;
+}
+
+.nav-bar a:nth-of-type(2)::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background: #05386B;
+    transition:all 0.4s ease-in-out;
+}
+.nav-bar a:nth-of-type(2):hover:before{
+    width: 70%
+}
+.name{
+    text-decoration: none;
+    padding: 7px 25px;
+    color: #FFF;
+    position: absolute;
+    top: 15px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 700;
+}
+.name:hover{
+    color: #05386B;
+}
+.title{
+    position: relative;
+    height: 90vh;
+    width: 100vw;
+    background-color: #41B3A3;
+
+}
+.title h1{
+    position: absolute;
+    color: #05386B;
+    font-weight: 1000;
+    font-size: 27px;
+    top: 20px;
+    left: 20px;
+}
+.des p{
+    position: absolute;
+    left: 30px;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 400;
+    top: 130px;
+}
+.si{
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    left: 850px;
+    top: 130px;
+    border-radius: 12px;
+    opacity: 90%;
+}
